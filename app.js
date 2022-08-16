@@ -5,7 +5,7 @@ import {studentRouter,teacherRouter} from './routes/web.js'
 const app=express()
 
 //Database Connection
-const DATABASE_URL='mongodb://localhost:27017'
+const DATABASE_URL='mongodb+srv://dhruvik:GdsH8EXHWF1z34Xf@cluster0.vxbpcd4.mongodb.net/school?retryWrites=true&w=majority'
 connectDB(DATABASE_URL)
 
 //URL Encoded for post method
