@@ -16,13 +16,13 @@ app.use('/student',express.static(path.join(process.cwd(),"public")))
 
 //Set Template Engine
 app.set('view engine','ejs')
-
+const port=process.env.PORT || 5000
 //Load Route
 app.use('/student',studentRouter)
 
 app.use('/teacher',teacherRouter)
 
 //Port 
-app.listen(4000,()=>{
+app.listen(port,()=>{
     console.log('Listening to port 4000')
 })
